@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Som Technical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Som <span>Technical</span></h1>
+            </div>
+            
+            <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Job-Skills">Job-Skills</a></li>
+                    <li><a href="#Contact">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+           
+        </div>
+    </header>
+    <div class="main">
+        <div class="content">
+            <h1>WELCOME TO <span>SOM-TECHNICALS</span></h1>
+            <button>Download Information more about company</button>
+        </div>
+    </div>
+    <div id="About">
+        <h1>About Us</h1>
+        <div class="about-content">
+           
+            <div class="left">
+                <h2>Welcome To Jamhuriya University</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, 
+                    minima architecto nam Ullam nobis soluta voluptas est ad maiores quaerat, enim aspernatur?</p>
+                <a href="#">Read More</a>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div> <img src="./myimg/img.png" alt="">
+        </div>
+    </div>
+    <div id="Job-Skills">
+        <h1>our services</h1>
+        <div class="services">
+            <div class="card">
+                <img src="./myimg/icon-1.png" alt="">
+                <h2>HTML 5</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</P>
+                 <button class="read-more">Read More</button>
+            </div>
+            <div class="card">
+                <img src="./myimg/icon-2.png" alt="">
+                <h2>CSS 3</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</P>
+                 <button class="read-more">Read More</button>
+            </div>
+            <div class="card">
+                <img src="./myimg/icon-3.png" alt="">
+                <h2>JavaScript</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</P>
+                 <button class="read-more">Read More</button>
+            </div>
+            <div class="card">
+                <img src="./myimg/icon-4.png" alt="">
+                <h2>SASS</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</P>
+                 <button class="read-more">Read More</button>
+            </div>
+            <div class="card">
+                <img src="./myimg/icon-5.png" alt="">
+                <h2>Jquery</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</P>
+                 <button class="read-more">Read More</button>
+            </div>
+            <div class="card">
+                <img src="./myimg/icon-6.png" alt="">
+                <h2>React.Js</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</P>
+                 <button class="read-more">Read More</button>
+            </div>
+        </div>
+    </div>
+
+<div id="Contact">
+    <h1>Contact Us</h1>
+    <div class="form">
+        <form>         
+            <input type="text" name="" id="" placeholder="Enter Your Name:">
+            <input type="email" name="" id="" placeholder="Enter Your Email:">
+           <textarea placeholder="Your Message:"></textarea>
+        </form>
+        <button class="read-more">Submit</button>
+    </div>
+</div>
+<footer>
+    <div class="copy">
+       <i> All Rights Reserved@Eng:<span>Mohamed Mukhtar</span></i> 
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Job-Skills">Job-Skills</a></li>
+        <li><a href="#Contact">Contact Us</a></li>
+    </ul>
+    
+</footer>
+<script>
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const navbar = document.querySelector(".nav-links");
+    mobileMenu.addEventListener("click", ()=>{
+        navbar.classList.toggle("nav-active")
+    });
+</script>
+</body>
+
+</html>

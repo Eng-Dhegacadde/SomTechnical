@@ -1,0 +1,368 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+header{
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    line-height: 70px;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    font-size: 35px;
+    color: white;
+}
+.logo h1 span {
+    color: greenyellow;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    text-transform: capitalize;
+}
+ul li a:hover{
+    color: greenyellow;
+}
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu span{
+    height: 3px;
+    display: flex;
+    width: 25px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+.main{
+    background-image: url(./myimg/background.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50% -50%);
+   
+}
+.content h1 {
+    font-size: 40px;
+}
+.content h1 span{
+    color: greenyellow;
+}
+button{
+    background-color: #000;
+    color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+button:hover{
+    color: greenyellow;
+
+}
+#About{
+    background-color: white;
+    /* padding: 30px 10px; */
+}
+#About h1{
+text-align: center;
+padding: 20px;
+font-size: 45px;
+color: greenyellow;
+}
+#About h1::before{
+    content: '';
+    position: absolute;
+    left: 50;
+    top: 124%;
+    background-color: #e91e63;
+    height: 3px;
+    width: 190px;
+}
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+   padding-bottom: 20px;
+}
+.about-content img{
+    width: 500px;
+}
+.left{
+display: flex;
+flex-direction: column;
+margin-left: 80px;
+}
+.left h2{
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+.left p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.left a{
+    text-decoration: none;
+    background-color: #000;
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    align-self: flex-start;
+    color: white;
+    margin-bottom: 10px;
+}
+.left a:hover{
+    background-color: greenyellow;
+}
+.icons i{
+    margin-top: 10px;
+    font-size: 28px;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+}
+.icons i:hover{
+    background-color: greenyellow;
+}
+/* services */
+#Job-Skills{
+    background-color: blueviolet;
+}
+#Job-Skills h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap:40px;
+    place-items: center;
+    margin-top: 40px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 300px;
+    padding: 20px 0px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    
+}
+.card h2{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.card p{
+    margin-top: 20px;
+}
+.card .read-more{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.card img{
+    width: 90px;
+}
+#Contact{
+    background-color: white;
+
+}
+#Contact h1{
+    text-align: center;
+    font-size: 40px;
+}
+.form{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+form {
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+input{
+    margin: 20px 0px;
+    height: 50px;
+    font-size: 22px;
+}
+textarea{
+    height: 90px;
+    font-size: 22px;
+    margin: 20px 0px;
+}
+.form .read-more{
+   margin-left: 38%;
+   margin-bottom: 20px;
+   font-size: 20px;
+   padding: 10px 90px;
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 40px;
+    font-size: 25px;
+    margin-top: 20px;
+    
+}
+span{
+    color: greenyellow;
+}
+.copy{
+    color: white;
+}
+@media screen and (max-width: 768px){
+    header{
+        background-color: #000;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        line-height: 40px;
+    }
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo h1{
+        font-size: 25px;
+        color: white;
+    }
+    .logo h1 span {
+        color: greenyellow;
+    }
+
+    .about-content{
+    display: flex;
+   flex-direction: column;
+   padding-bottom: 20px;
+}
+.about-content img{
+    width: 300px;
+    margin-top: 20px;
+}
+.content{
+    margin-left: -90px;
+}
+.left {
+    align-items: center;
+    margin-top: 20px;
+}
+.left a{
+    align-self: center;
+}
+.left h2{
+    font-size: 20px;
+}
+.content h1{
+    font-size: 25px;
+}
+.content button{
+    font-size: 17px;
+}
+.services{
+    align-items: center;
+    margin-left: 30px;
+}
+#Contact h1{
+    text-align: center;
+    font-size: 34px;
+}
+.form{
+    margin-left: 0px;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+form {
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+input{
+    margin: 20px 0px;
+    height: 50px;
+    font-size: 18px;
+}
+textarea{
+    height: 90px;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+.form .read-more{
+   margin-left: 20%;
+   margin-bottom: 20px;
+   font-size: 20px;
+   padding: 10px 90px;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+footer ul li{
+    margin-right: 10px;
+}
+.nav-links{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px 25px;
+    margin-top: 8px;
+    background-color: rgba(0, 0, 0, 0.49);
+}
+.nav-links li{
+    padding: 15px 0px;
+}
+.mobile-menu{
+    display: block;
+}
+.nav-active{
+    display: block;
+}
+}
